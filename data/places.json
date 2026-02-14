@@ -1,0 +1,579 @@
+{
+  "balodabazar": {
+    "meta": {
+      "name": "Balodabazar",
+      "description": "Balodabazar is known for temples, forests, and cultural heritage of Chhattisgarh."
+    },
+
+    "temples": [
+      {
+        "name": "Bhand Dewal Temple",
+        "description": "Ancient Shiva temple known for architecture.",
+        "image": "balodabazar/bhand.jpg",
+        "map": {
+    "lat": 21.6432,
+    "lng": 82.1595}
+      },
+      {
+        "name": "Shivrinarayan Temple",
+        "description": "Major pilgrimage site at Mahanadi–Jonk confluence.",
+        "image": "balodabazar/shivinarayan.jpg",
+        "map": {
+    "lat": 21.719564339775875,
+    "lng": 82.58997939091128}
+      },
+      {
+        "name": "Champaran Temple (Vallabhacharya Prakatya Sthal)",
+        "description": "Birthplace of Saint Vallabhacharya.",
+        "image": "balodabazar/champaran.jpg",
+        "map": {
+    "lat": 21.033132425827223, 
+    "lng": 81.92560971787884}
+      }
+    ],
+
+    "dams": [
+      {
+        "name": "Khapri Dam",
+        "description": "Major irrigation dam in Balodabazar.",
+        "image": "balodabazar/khapri.jpg",
+        "map": {
+    "lat": 21.4616334570097, 
+    "lng": 81.81732863177224}
+      }
+    ],
+
+    "waterfalls": [
+      {
+        "name": "Chitrot Waterfall",
+        "description": "Seasonal scenic waterfall.",
+        "image": "balodabazar/chitrot.jpg",
+        "map": {
+    "lat": 21.4616334570097, 
+    "lng": 81.81732863177224}
+      }
+    ],
+
+    "wildlife": [
+      {
+        "name": "Barnawapara Wildlife Sanctuary",
+      "description": "Famous wildlife sanctuary known for deer, leopards, and birds.",
+      "image": "balodabazar/barnawapara.jpg",
+      "map": { "lat": 21.4876, "lng": 82.3787 }
+      }
+    ],
+
+    "hill-stations": [
+      {
+        "name": "Champaran Viewpoint",
+      "description": "Small natural elevated area offering scenic views.",
+      "image": "balodabazar/champaran.jpg",
+      "map": { "lat": 21.5560, "lng": 82.2160 }
+      }
+    ],
+
+    "markets": [{
+      "name": "Balodabazar Main Market",
+      "description": "Local daily market for vegetables and household goods.",
+      "image": "balodabazar/main-market.jpg",
+      "map": { "lat": 21.6555, "lng": 82.1584 }
+    },
+    {
+      "name": "Shivrinarayan Local Bazaar",
+      "description": "Temple town market known for sweets and religious items.",
+      "image": "balodabazar/shivrinarayan-market.jpg",
+      "map": { "lat": 21.8212, "lng": 82.5827 }
+    }]
+  },
+
+  "raipur": {
+  "meta": {
+    "name": "Raipur",
+    "description": "Raipur, the capital of Chhattisgarh, is known for its temples, lakes, vibrant markets, and cultural landmarks."
+  },
+
+  "temples": [
+    {
+      "name": "Dudhadhari Math",
+      "description": "Ancient temple and monastery dedicated to Lord Rama.",
+      "image": "raipur/dudhadhari.jpg",
+      "map": {
+        "lat": 21.2514,
+        "lng": 81.6296
+      }
+    },
+    {
+      "name": "Hatkeshwar Mahadev Temple",
+      "description": "Popular Shiva temple visited by devotees throughout the year.",
+      "image": "raipur/hatkeshwar.jpg",
+      "map": {
+        "lat": 21.2432,
+        "lng": 81.6410
+      }
+    },
+    {
+      "name": "Mahant Ghasidas Memorial",
+      "description": "Important cultural and historical landmark of Raipur.",
+      "image": "raipur/mahant.jpg",
+      "map": {
+        "lat": 21.2519,
+        "lng": 81.6337
+      }
+    }
+  ],
+
+  "waterfalls": [],
+
+  "wildlife": [
+    {
+      "name": "Nandan Van Jungle Safari",
+      "description": "Wildlife safari and zoo showcasing rich biodiversity.",
+      "image": "raipur/wildlife.jpg",
+      "map": {
+        "lat": 21.3162,
+        "lng": 81.7669
+      }
+    }
+  ],
+
+  "markets": [
+    {
+      "name": "Gol Bazaar",
+      "description": "One of the oldest and busiest markets in Raipur.",
+      "image": "raipur/market.jpg",
+      "map": {
+        "lat": 21.2500,
+        "lng": 81.6315
+      }
+    },
+    {
+      "name": "Pandri Market",
+      "description": "Famous shopping area known for clothes and accessories.",
+      "image": "raipur/market1.jpg",
+      "map": {
+        "lat": 21.2576,
+        "lng": 81.6535
+      }
+    }
+  ]
+},
+
+"durg-bhilai": {
+  "meta": {
+    "name": "Durg–Bhilai",
+    "description": "Durg–Bhilai twin cities are known for temples, steel industry, dams, markets, and leisure parks of Chhattisgarh."
+  },
+
+  "temples": [
+    {
+      "name": "Devrani–Jethani Temple",
+      "description": "Ancient temple famous for its unique architecture.",
+      "image": "durg-bhilai/devrani-jethani.jpg",
+      "map": { "lat": 21.2124, "lng": 81.2821 }
+    },
+    {
+      "name": "Uwasaggaharam Parshwa Teerth",
+      "description": "Well-known Jain pilgrimage site in Durg.",
+      "image": "durg-bhilai/uvasaggaharam.jpg",
+      "map": { "lat": 21.1983, "lng": 81.2995 }
+    },
+    {
+      "name": "Shiv Mandir Sector 6",
+      "description": "Popular Shiva temple located in Bhilai township.",
+      "image": "durg-bhilai/shiv-mandir.jpg",
+      "map": { "lat": 21.1947, "lng": 81.3464 }
+    }
+  ],
+
+  "dams": [
+    {
+      "name": "Tandula Dam",
+      "description": "Major irrigation dam near Durg with scenic surroundings.",
+      "image": "durg-bhilai/tandula.jpg",
+      "map": { "lat": 20.8833, "lng": 81.1500 }
+    },
+    {
+      "name": "Kharkhara Reservoir",
+      "description": "Reservoir and picnic spot near Durg.",
+      "image": "durg-bhilai/kharkhara.jpg",
+      "map": { "lat": 21.1212, "lng": 81.2356 }
+    }
+  ],
+
+  "markets": [
+    {
+      "name": "Power House Market",
+      "description": "Busy shopping area in Bhilai for clothes and food.",
+      "image": "durg-bhilai/power-house-market.jpg",
+      "map": { "lat": 21.2090, "lng": 81.3152 }
+    }
+  ],
+
+  "wildlife": [
+    {
+      "name": "Maitri Bagh Zoo",
+      "description": "Zoo and recreational park with musical fountain.",
+      "image": "durg-bhilai/maitri-bagh-zoo.jpg",
+      "map": { "lat": 21.2132, "lng": 81.3220 }
+    }
+  ]
+},
+
+"jagdalpur-bastar": {
+  "meta": {
+    "name": "Jagdalpur (Bastar)",
+    "description": "Jagdalpur is the tourism capital of Bastar, famous for waterfalls, tribal culture, caves, and forests."
+  },
+
+  "temples": [
+    {
+      "name": "Danteshwari Temple",
+      "description": "One of the 52 Shakti Peethas, major religious site of Bastar.",
+      "image": "jagdalpur/danteshwari.jpg",
+      "map": { "lat": 19.0750, "lng": 81.9580 }
+    }
+  ],
+
+  "waterfalls": [
+    {
+      "name": "Chitrakote Waterfall",
+      "description": "Known as the Niagara of India, widest waterfall in India.",
+      "image": "jagdalpur/chitrakote.jpg",
+      "map": { "lat": 19.2075, "lng": 81.6957 }
+    },
+    {
+      "name": "Tirathgarh Waterfall",
+      "description": "Beautiful multi-level waterfall inside Kanger Valley.",
+      "image": "jagdalpur/tirathgarh.jpg",
+      "map": { "lat": 18.8564, "lng": 81.9419 }
+    }
+  ],
+
+  "wildlife": [
+    {
+      "name": "Kanger Valley National Park",
+      "description": "Dense forest, caves, wildlife and biodiversity hotspot.",
+      "image": "jagdalpur/kanger.jpg",
+      "map": { "lat": 18.8770, "lng": 81.9410 }
+    }
+  ],
+
+  "markets": [
+    {
+      "name": "Jagdalpur Main Market",
+      "description": "Local tribal handicrafts and Bastar art market.",
+      "image": "jagdalpur/market.jpg",
+      "map": { "lat": 19.0730, "lng": 81.9560 }
+    }
+  ]
+},
+
+"korba": {
+  "meta": {
+    "name": "Korba",
+    "description": "Korba is known for Hasdeo river, dams, forests and natural beauty."
+  },
+
+  "temples": [
+    {
+      "name": "Siddh Baba Temple",
+      "description": "Famous local religious temple near Hasdeo river.",
+      "image": "korba/siddhbaba.jpg",
+      "map": { "lat": 22.3456, "lng": 82.6960 }
+    }
+  ],
+
+  "dams": [
+    {
+      "name": "Hasdeo Bango Dam",
+      "description": "One of the largest dams of Chhattisgarh.",
+      "image": "korba/hasdeo.jpg",
+      "map": { "lat": 22.3900, "lng": 82.7500 }
+    }
+  ],
+
+  "markets": [
+    {
+      "name": "Korba City Market",
+      "description": "Main shopping and local goods market.",
+      "image": "korba/market.jpg",
+      "map": { "lat": 22.3450, "lng": 82.6965 }
+    }
+  ]
+},
+
+"ambikapur-surguja": {
+  "meta": {
+    "name": "Ambikapur (Surguja)",
+    "description": "Ambikapur is known for hills, temples, waterfalls and natural landscapes."
+  },
+
+  "temples": [
+    {
+      "name": "Mahamaya Temple",
+      "description": "Famous temple of Goddess Mahamaya.",
+      "image": "ambikapur/mahamaya.jpg",
+      "map": { "lat": 23.1183, "lng": 83.1955 }
+    }
+  ],
+
+  "waterfalls": [
+    {
+      "name": "Tiger Point Waterfall",
+      "description": "Scenic waterfall surrounded by forest hills.",
+      "image": "ambikapur/tigerpoint.jpg",
+      "map": { "lat": 23.2600, "lng": 83.0200 }
+    }
+  ],
+
+  "hill-stations": [
+    {
+      "name": "Mainpat Hill Station",
+      "description": "Mini Shimla of Chhattisgarh.",
+      "image": "ambikapur/mainpat.jpg",
+      "map": { "lat": 22.8167, "lng": 83.2833 }
+    }
+  ],
+
+  "markets": [
+    {
+      "name": "Ambikapur Main Market",
+      "description": "Local shopping and food hub.",
+      "image": "ambikapur/market.jpg",
+      "map": { "lat": 23.1200, "lng": 83.1950 }
+    }
+  ]
+},
+
+"raigarh": {
+  "meta": {
+    "name": "Raigarh",
+    "description": "Raigarh is known for temples, rivers and cultural heritage."
+  },
+
+  "temples": [
+    {
+      "name": "Gomarda Temple",
+      "description": "Important local religious temple.",
+      "image": "raigarh/gomarda.jpg",
+      "map": { "lat": 21.8974, "lng": 83.3950 }
+    }
+  ],
+
+  "wildlife": [
+    {
+      "name": "Gomarda Wildlife Sanctuary",
+      "description": "Forest reserve with diverse wildlife.",
+      "image": "raigarh/gomarda-sanctuary.jpg",
+      "map": { "lat": 21.7000, "lng": 83.4000 }
+    }
+  ],
+
+  "markets": [
+    {
+      "name": "Raigarh Market",
+      "description": "Traditional local shopping area.",
+      "image": "raigarh/market.jpg",
+      "map": { "lat": 21.8975, "lng": 83.3952 }
+    }
+  ]
+},
+
+"dhamtari": {
+  "meta": {
+    "name": "Dhamtari",
+    "description": "Dhamtari is known for dams, forests and waterfalls."
+  },
+
+  "dams": [
+    {
+      "name": "Gangrel Dam",
+      "description": "Major dam and picnic spot near Dhamtari.",
+      "image": "dhamtari/gangrel.jpg",
+      "map": { "lat": 20.6070, "lng": 81.7700 }
+    }
+  ],
+
+  "waterfalls": [
+    {
+      "name": "Ghatarani Waterfall",
+      "description": "Popular waterfall during monsoon.",
+      "image": "dhamtari/ghatarani.jpg",
+      "map": { "lat": 20.5000, "lng": 81.9000 }
+    }
+  ],
+
+  "markets": [
+    {
+      "name": "Dhamtari Market",
+      "description": "Local trading and shopping hub.",
+      "image": "dhamtari/market.jpg",
+      "map": { "lat": 20.7070, "lng": 81.5500 }
+    }
+  ]
+},
+
+"kabirdham-kawardha": {
+  "meta": {
+    "name": "Kawardha (Kabirdham)",
+    "description": "Kawardha is known for Bhoramdeo Temple, forests, and heritage sites."
+  },
+
+  "temples": [
+    {
+      "name": "Bhoramdeo Temple",
+      "description": "Ancient temple known as Khajuraho of Chhattisgarh.",
+      "image": "kawardha/bhoramdeo.jpg",
+      "map": { "lat": 22.1006, "lng": 81.1894 }
+    },
+    {
+      "name": "Madwa Mahal",
+      "description": "Historical temple structure near Bhoramdeo complex.",
+      "image": "kawardha/madwa.jpg",
+      "map": { "lat": 22.0950, "lng": 81.1900 }
+    }
+  ],
+
+  "wildlife": [
+    {
+      "name": "Kawardha Forest Area",
+      "description": "Dense forest region with wildlife and trekking trails.",
+      "image": "kawardha/forest.jpg",
+      "map": { "lat": 22.0500, "lng": 81.2500 }
+    }
+  ],
+
+  "markets": [
+    {
+      "name": "Kawardha Main Market",
+      "description": "Local shopping market with tribal products.",
+      "image": "kawardha/market.jpg",
+      "map": { "lat": 22.0086, "lng": 81.2330 }
+    }
+  ]
+},
+
+"kanker": {
+  "meta": {
+    "name": "Kanker",
+    "description": "Kanker is known for waterfalls, tribal culture, and forests."
+  },
+
+  "waterfalls": [
+    {
+      "name": "Malanjkudum Waterfall",
+      "description": "Beautiful waterfall surrounded by dense forest.",
+      "image": "kanker/malanjkudum.jpg",
+      "map": { "lat": 20.2890, "lng": 81.6500 }
+    }
+  ],
+
+  "temples": [
+    {
+      "name": "Shiv Temple Kanker",
+      "description": "Popular local temple in Kanker town.",
+      "image": "kanker/shiv.jpg",
+      "map": { "lat": 20.2710, "lng": 81.4910 }
+    }
+  ],
+
+  "markets": [
+    {
+      "name": "Kanker Local Market",
+      "description": "Local tribal and daily goods market.",
+      "image": "kanker/market.jpg",
+      "map": { "lat": 20.2715, "lng": 81.4930 }
+    }
+  ]
+},
+
+"jashpur": {
+  "meta": {
+    "name": "Jashpur",
+    "description": "Jashpur is known for waterfalls, hills, and scenic natural beauty."
+  },
+
+  "waterfalls": [
+    {
+      "name": "Rajpuri Waterfall",
+      "description": "Major tourist waterfall of Jashpur region.",
+      "image": "jashpur/rajpuri.jpg",
+      "map": { "lat": 22.9250, "lng": 84.1500 }
+    },
+    {
+      "name": "Danpuri Waterfall",
+      "description": "Seasonal waterfall surrounded by forest.",
+      "image": "jashpur/danpuri.jpg",
+      "map": { "lat": 22.8500, "lng": 84.1000 }
+    }
+  ],
+
+  "temples": [
+    {
+      "name": "Rani Durgavati Temple",
+      "description": "Historic religious site in Jashpur.",
+      "image": "jashpur/temple.jpg",
+      "map": { "lat": 22.8800, "lng": 84.1400 }
+    }
+  ],
+
+  "markets": [
+    {
+      "name": "Jashpur Market",
+      "description": "Local agricultural and daily goods market.",
+      "image": "jashpur/market.jpg",
+      "map": { "lat": 22.8805, "lng": 84.1380 }
+    }
+  ]
+},
+
+"bijapur": {
+  "meta": {
+    "name": "Bijapur",
+    "description": "Bijapur is known for forest landscapes and tribal culture."
+  },
+
+  "wildlife": [
+    {
+      "name": "Indravati National Park Region",
+      "description": "Dense forest region with rich biodiversity.",
+      "image": "bijapur/forest.jpg",
+      "map": { "lat": 18.8000, "lng": 81.3000 }
+    }
+  ],
+
+  "markets": [
+    {
+      "name": "Bijapur Market",
+      "description": "Local trading and tribal goods market.",
+      "image": "bijapur/market.jpg",
+      "map": { "lat": 18.8600, "lng": 80.9800 }
+    }
+  ]
+},
+
+"mahasamund": {
+  "meta": {
+    "name": "Mahasamund",
+    "description": "Mahasamund is known for temples, forest areas and rural tourism."
+  },
+
+  "temples": [
+    {
+      "name": "Chandi Temple Bagbahara",
+      "description": "Ancient temple dedicated to Goddess Chandi.",
+      "image": "mahasamund/chandi.jpg",
+      "map": { "lat": 21.0330, "lng": 82.3000 }
+    }
+  ],
+
+  "markets": [
+    {
+      "name": "Mahasamund Main Market",
+      "description": "Local trading hub.",
+      "image": "mahasamund/market.jpg",
+      "map": { "lat": 21.1100, "lng": 82.1000 }
+    }
+  ]
+}
+}

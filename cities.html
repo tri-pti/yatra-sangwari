@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destinations | Yatra Sangwari</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="assets/images/logo/logo.png" alt="Yatra Sangwari Logo">
+      <span>Yatra Sangwari</span>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cities.html" class="active">Destinations</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="page-header">
+  <h1>Explore Chhattisgarh</h1>
+  <p>हमर छत्तीसगढ़ · जोहार छत्तीसगढ़</p>
+</section>
+
+<!-- ================= MAP SECTION ================= -->
+<section class="map-section">
+  <img src="assets/images/logo/chhattisgarh.jpg" alt="Map of Chhattisgarh">
+  <div class="map-overlay">
+    <h2>Discover the Heart of India</h2>
+  </div>
+</section>
+
+<!--city grid-->
+<div class="filter-container">
+  <button data-filter="all" class="filter-btn active">All</button>
+  <button data-filter="temples" class="filter-btn">Temples</button>
+  <button data-filter="waterfalls" class="filter-btn">Waterfalls</button>
+  <button data-filter="wildlife" class="filter-btn">Wildlife</button>
+  <button data-filter="markets" class="filter-btn">Markets</button>
+  <button data-filter="dams" class="filter-btn">Dams</button>
+</div>
+
+<!-- ================= DISTRICT GRID ================= -->
+<main class="container">
+  <section class="district-grid">
+
+    <!-- District Card -->
+<a href="pages/city.html?city=raipur" class="district-card" data-city="raipur">
+  <h3>Raipur</h3>
+  <p>Capital City</p>
+</a>
+
+<a href="pages/city.html?city=durg-bhilai" class="district-card" data-city="durg-bhilai">
+  <h3>Durg–Bhilai</h3>
+  <p>Industrial & Cultural Hub</p>
+</a>
+
+<a href="pages/city.html?city=jagdalpur-bastar" class="district-card" data-city="jagdalpur-bastar">
+  <h3>Jagdalpur / Bastar</h3>
+  <p>Waterfalls & Tribal Life</p>
+</a>
+
+<a href="pages/city.html?city=ambikapur-surguja" class="district-card" data-city="ambikapur-surguja">
+  <h3>Ambikapur / Mainpat</h3>
+  <p>Hills & Nature</p>
+</a>
+
+<a href="pages/city.html?city=korba" class="district-card" data-city="korba">
+  <h3>Korba</h3>
+  <p>Dams & Rivers</p>
+</a>
+
+<a href="pages/city.html?city=kabirdham-kawardha" class="district-card" data-city="kabirdham-kawardha">
+  <h3>Kawardha</h3>
+  <p>Bhoramdeo Temple</p>
+</a>
+
+<a href="pages/city.html?city=kanker" class="district-card" data-city="kanker">
+  <h3>Kanker</h3>
+  <p>Waterfalls & Forests</p>
+</a>
+
+<a href="pages/city.html?city=jashpur" class="district-card" data-city="jashpur">
+  <h3>Jashpur</h3>
+  <p>Waterfalls & Hills</p>
+</a>
+
+<a href="pages/city.html?city=dhamtari" class="district-card" data-city="dhamtari">
+  <h3>Dhamtari</h3>
+  <p>Dams & Nature</p>
+</a>
+
+<a href="pages/city.html?city=raigarh" class="district-card"  data-city="raigarh">
+  <h3>Raigarh</h3>
+  <p>Culture & Wildlife</p>
+</a>
+
+<a href="pages/city.html?city=mahasamund" class="district-card" data-city="mahasamund">
+  <h3>Mahasamund</h3>
+  <p>Temples & Rural Tourism</p>
+</a>
+
+<a href="pages/city.html?city=bijapur" class="district-card" data-city="bijapur">
+  <h3>Bijapur</h3>
+  <p>Forests & Tribal Region</p>
+</a>
+
+    <!-- You can add all 33 districts here -->
+    
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>© 2026 Yatra Sangwari</p>
+</footer>
+
+<script src="assets/js/cities.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhattisgarh - Heart of India</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #45a049;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header h1 {
+            position: relative;
+            z-index: 1;
+            animation: slideIn 1s ease-out, pulse 2s infinite alternate;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                var(--primary-color),
+                var(--primary-color) 10px,
+                var(--secondary-color) 10px,
+                var(--secondary-color) 20px
+            );
+            animation: headerBg 20s linear infinite;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            margin-right: 1rem;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: #3bc3f9;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 0.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #ffeb3b;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: #ffeb3b;
+        }
+        
+        nav ul li a:hover::after {
+            transform: scaleX(1);
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        .map-container {
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        
+        .map-image {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .map-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .map-container:hover .map-image {
+            transform: scale(1.05);
+        }
+        
+        .map-container:hover .map-overlay {
+            opacity: 1;
+        }
+        
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section h2::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .section:hover h2::after {
+            width: 100%;
+        }
+        
+        .fact-list {
+            list-style-type: none;
+        }
+        
+        .fact-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        
+        .fact-list li:hover {
+            transform: translateX(10px);
+        }
+        
+        .fact-list li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -0.2rem;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+        
+        @keyframes headerBg {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Travel Companion Logo" class="logo-img" style="width: 120px; height: auto;">
+            <!--<h1 style="font-size: 2.5em;">YATRA SANGWARI</h1>-->
+        </div>
+        <h1>Chhattisgarh: The Heart of India</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#history">History</a></li>
+            <li><a href="#famous">Famous For</a></li>
+            <li><a href="#culture">Culture</a></li>
+            <li><a href="#tourism">Tourism</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="map-container">
+            <img src="assets/images/logo/cgphotoo.jpeg" alt="Map of Chhattisgarh" class="map-image">
+            <div class="map-overlay">
+                <p>Explore the diverse districts of Chhattisgarh</p>
+            </div>
+        </div>
+        
+        <div id="history" class="section">
+            <h2>History of Chhattisgarh</h2>
+            <p>Chhattisgarh, formed on November 1, 2000, is one of the youngest states in India. However, its history dates back to ancient times. The region was part of the Dakshina Kosala Kingdom and later came under the influence of various dynasties including the Mauryas, Guptas, and Mughals.</p>
+            <p>During the medieval period, the Kalchuri dynasty ruled over the region. Later, it became part of the Maratha Empire before coming under British rule. During the British era, it was part of the Central Provinces and Berar.</p>
+            <p>The movement for a separate state of Chhattisgarh started in the 1920s and gained momentum in the 1970s. Finally, in 2000, Chhattisgarh was carved out of Madhya Pradesh to become the 26th state of India.</p>
+        </div>
+        
+        <div id="famous" class="section">
+            <h2>What Chhattisgarh is Famous For</h2>
+            <ul class="fact-list">
+                <li>Rich Mineral Resources: Known as the "Rice Bowl of India" and for its abundant mineral wealth, including coal, iron ore, and bauxite.</li>
+                <li>Tribal Culture: Home to numerous indigenous tribes with unique traditions and art forms, such as the Gonds, Baigas, and Halbas.</li>
+                <li>Natural Beauty: Boasts dense forests, waterfalls, and diverse wildlife, including the Kanger Valley National Park and Indravati National Park.</li>
+                <li>Bastar Art: Renowned for its intricate metalwork, terracotta, and wooden crafts, especially the famous "Dhokra" art.</li>
+                <li>Chitrakote Falls: Often called the "Niagara Falls of India", it's the widest waterfall in the country.</li>
+                <li>Steel City: Bhilai, home to one of the largest steel plants in India, contributing significantly to the country's steel production.</li>
+            </ul>
+        </div>
+        
+        <div id="culture" class="section">
+            <h2>Culture and Traditions</h2>
+            <p>Chhattisgarh has a rich cultural heritage, deeply influenced by its tribal populations. The state is known for its vibrant folk music, dance forms, and traditional arts and crafts.</p>
+            <p>Some notable cultural aspects include:</p>
+            <ul class="fact-list">
+                <li>Panthi Dance: A popular folk dance performed to honor Saint Ghasidas.</li>
+                <li>Raut Nacha: A traditional dance of cowherds, usually performed during Diwali and other festivals.</li>
+                <li>Bastar Dussehra: A unique 75-day long festival celebrated in the Bastar region.</li>
+                <li>Madai Festival: A tribal fair that moves from village to village over several months.</li>
+            </ul>
+        </div>
+        
+        <div id="tourism" class="section">
+            <h2>Tourism in Chhattisgarh</h2>
+            <p>Chhattisgarh offers a blend of natural beauty, historical sites, and cultural experiences for tourists. Some popular attractions include:</p>
+            <ul class="fact-list">
+                <li>Chitrakoot Falls: The widest waterfall in India, often compared to Niagara Falls.</li>
+                <li>Barnawapara Wildlife Sanctuary: Home to diverse flora and fauna, including leopards and bears.</li>
+                <li>Sirpur: An ancient city with archaeological remains of Buddhist and Hindu temples.</li>
+                <li>Bhoramdeo Temple: Often called the "Khajuraho of Chhattisgarh" due to its intricate carvings.</li>
+                <li>Tirathgarh Falls: A picturesque waterfall surrounded by lush forests.</li>
+            </ul>
+            <div class="gallery">
+                
+                <img src="assets/images/logo/Bhoramdeo.jpg" alt="Bhoramdeo Temple">
+                <img src="assets/images/logo/chitrakoot.jpg" alt="Chitrakoot Falls">
+                <img src="assets/images/logo/sirpur.jpg" alt="Sirpur Monuments">
+            </div>
+        </div>
+        
+        <div id="about" class="section">
+            <h2>About Chhattisgarh</h2>
+            <p>Chhattisgarh, located in central India, is known for its rich cultural heritage, lush forests, and abundant natural resources. The state capital is Raipur, which is also its largest city and commercial center.</p>
+            <p>Key facts about Chhattisgarh:</p>
+            <ul class="fact-list">
+                <li>Population: Approximately 29 million (2021 estimate)</li>
+                <li>Area: 135,191 square kilometers</li>
+                <li>Official Language: Chhattisgarhi (Hindi is also widely spoken)</li>
+                <li>Major Industries: Mining, steel production, agriculture, and forestry</li>
+                <li>Literacy Rate: 70.3% (2011 census)</li>
+            </ul>
+            <p>The cuisine of Chhattisgarh is distinct, with rice being a staple food. Popular dishes include Chila (rice pancake), Bore Baasi (fermented rice), and Mahua Ladoo (sweet made from Mahua flowers).</p>
+            <p>Chhattisgarh is also known for its commitment to renewable energy, with several initiatives to promote solar power and other sustainable energy sources.</p>
+        </div>
+    </div>
+    
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const sections = document.querySelectorAll('.section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => {
+            observer.observe(section);  // This line was missing
+        });
+
+        // Ensure content is visible even if JavaScript fails
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                sections.forEach(section => {
+                    section.style.opacity = 1;
+                    section.style.transform = 'translateY(0)';
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>

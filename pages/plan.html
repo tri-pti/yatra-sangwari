@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plan Your Trip | Yatra Sangwari</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <span class="logo-text">Yatra Sangwari</span>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../cities.html">Cities</a>
+    </nav>
+  </div>
+</header>
+<small class="distance-note">
+  Includes inter-location travel
+</small>
+
+<section class="plan-hero">
+  <h1>Plan Your Trip</h1>
+  <p>Create a personalized itinerary for Chhattisgarh</p>
+</section>
+
+<section class="plan-form">
+  <select id="citySelect">
+    <option value="">Select City</option>
+    <option value="balodabazar">Balodabazar</option>
+    <option value="raipur">Raipur</option>
+  </select>
+
+  <select id="daySelect">
+    <option value="">Number of Days</option>
+    <option value="1">1 Day</option>
+    <option value="2">2 Days</option>
+    <option value="3">3 Days</option>
+  </select>
+
+  <button id="generatePlan">Generate Plan</button>
+</section>
+
+<section class="itinerary" id="itinerary"></section>
+
+<script src="../assets/js/plan.js"></script>
+</body>
+</html>

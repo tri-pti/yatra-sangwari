@@ -1,0 +1,888 @@
+/* ===============================
+   Page Styles (Hero, Sections)
+================================ */
+
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.hero-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    gap: 0.6rem;
+  }
+}
+
+/* ===============================
+   Cities Page
+================================ */
+
+.page-header {
+  padding: 7rem 1rem 3rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.district-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.district-card {
+  background: #fff;
+  padding: 2rem 1rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.district-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+  color: var(--secondary);
+}
+
+.district-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.district-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+  background: linear-gradient(135deg, #ffecd2, #fad0c4);
+}
+/* ===============================
+   Cities Page Extras
+================================ */
+
+.map-section {
+  position: relative;
+  max-width: 1100px;
+  margin: 2rem auto;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.map-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.map-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-overlay h2 {
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+/* ===============================
+   City Page
+================================ */
+
+.city-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.category-card {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.category-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary);
+}
+
+.category-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  background: linear-gradient(135deg, #ffecd2, #fad0c4);
+}
+/* ===============================
+   City Page – Animated Cards
+================================ */
+
+.city-hero {
+  padding: 8rem 1rem 3rem;
+  text-align: center;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+.city-hero h1 {
+  font-size: 3.2rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.city-hero p {
+  max-width: 800px;
+  margin: auto;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.city-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem 1rem;
+  gap: 2rem;
+  perspective: 1200px;
+}
+
+.city-card {
+  width: 300px;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.city-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+}
+
+.city-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.city-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.card-btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.card-btn:hover {
+  background-color: #e65932;
+  transform: scale(1.05);
+}
+
+/* ===============================
+   Category Pages
+================================ */
+
+.category-hero {
+   position: relative;
+  overflow: hidden;
+  min-height: 300px;
+  z-index: 1;
+  padding: 8rem 1rem 3rem;
+  text-align: center;
+  background: linear-gradient(135deg, #ffecd2, #fad0c4);
+}
+
+.category-hero h1 {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.category-hero p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.place-card {
+  width: 300px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  transition: all 0.4s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+}
+
+.place-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.place-card-content {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.place-card-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.place-card-content p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+.map-btn {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.5rem 1.2rem;
+  background-color: var(--secondary);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.map-btn:hover {
+  background-color: #1ea7d9;
+  transform: translateY(-2px);
+}
+
+   /* ===============================
+   Page Breadcrumb (FINAL)
+================================ */
+
+.page-breadcrumb {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.page-breadcrumb a {
+  color: var(--secondary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.page-breadcrumb span {
+  color: #333;
+  font-weight: 500;
+}
+
+.page-breadcrumb a::after {
+  content: "›";
+  margin: 0 0.6rem;
+  color: #999;
+}
+
+.page-breadcrumb a:last-child::after {
+  content: "";
+}
+
+/* ===============================
+   Loading & Skeleton UI
+================================ */
+
+.loading-text {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+/* Skeleton Card */
+.skeleton-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.skeleton-img {
+  height: 200px;
+  background: linear-gradient(
+    90deg,
+    #e5e7eb 25%,
+    #f3f4f6 37%,
+    #e5e7eb 63%
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-text {
+  height: 16px;
+  margin: 12px;
+  border-radius: 8px;
+  background: #e5e7eb;
+}
+
+.skeleton-text.short {
+  width: 60%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+/* ===============================
+   Card Entrance Animation
+================================ */
+
+.city-card,
+.place-card {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: cardEnter 0.5s ease forwards;
+}
+
+.city-card:nth-child(1),
+.place-card:nth-child(1) { animation-delay: 0.05s; }
+.city-card:nth-child(2),
+.place-card:nth-child(2) { animation-delay: 0.1s; }
+.city-card:nth-child(3),
+.place-card:nth-child(3) { animation-delay: 0.15s; }
+.city-card:nth-child(4),
+.place-card:nth-child(4) { animation-delay: 0.2s; }
+.city-card:nth-child(5),
+.place-card:nth-child(5) { animation-delay: 0.25s; }
+.city-card:nth-child(6),
+.place-card:nth-child(6) { animation-delay: 0.3s; }
+
+@keyframes cardEnter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   Image Hover Polish
+================================ */
+
+.city-card img,
+.place-card img {
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.city-card:hover img,
+.place-card:hover img {
+  transform: scale(1.08);
+  filter: saturate(1.1);
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.dir-btn {
+  background-color: #22c55e;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 18px;
+  font-size: 0.85rem;
+}
+
+.dir-btn:hover {
+  background-color: #16a34a;
+}
+
+.distance {
+  font-size: 0.85rem;
+  color: #444;
+  margin: 0.4rem 0;
+}
+
+/* ===============================
+   Embedded Google Map
+================================ */
+
+.map-embed {
+  margin-top: 0.6rem;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.map-embed iframe {
+  width: 100%;
+  height: 200px;
+  border: 0;
+}
+
+/* ===============================
+   Category Background System
+================================ */
+
+#category-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.category-container {
+  position: relative;
+  z-index: 2;               /* ABOVE hero */
+  padding-top: 2rem;
+}
+
+.category-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.category-hero > *:not(#category-bg) {
+  position: relative;
+  z-index: 1;
+}
+
+/* waterfall aniamtion*/
+.bg-waterfalls {
+  background: linear-gradient(
+    120deg,
+    #b6e0fe,
+    #8ecae6,
+    #b6e0fe
+  );
+  background-size: 400% 400%;
+  animation: waterfallMove 3s linear infinite;
+}
+
+@keyframes waterfallMove {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+
+/*temple aniamtion*/
+.bg-temples {
+  background:
+    radial-gradient(circle at center, rgba(255, 220, 160, 0.6), transparent 60%),
+    linear-gradient(135deg, #fff1dc, #fbe7c6);
+  animation: templeGlow 5s ease-in-out infinite;
+}
+
+@keyframes templeGlow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.5; }
+}
+
+
+/*wildlife*/
+.bg-wildlife {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(167, 243, 208, 0.6), transparent 55%),
+    radial-gradient(circle at 80% 70%, rgba(134, 239, 172, 0.6), transparent 55%);
+  animation: forestDrift 10s ease-in-out infinite;
+}
+
+@keyframes forestDrift {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 0%; }
+}
+
+
+/*dams*/
+.bg-dams {
+  background: linear-gradient(
+    90deg,
+    #cfd9df,
+    #a5b4fc,
+    #cfd9df
+  );
+  background-size: 300% 100%;
+  animation: damFlow 8s linear infinite;
+}
+
+@keyframes damFlow {
+  from { background-position: 0% 50%; }
+  to { background-position: 100% 50%; }
+}
+
+/*hill*/
+.bg-hill-stations {
+  background:
+    radial-gradient(circle at 30% 40%, rgba(255,255,255,0.8), transparent 60%),
+    linear-gradient(135deg, #dbeafe, #e0f2fe);
+  animation: cloudMove 14s ease-in-out infinite;
+}
+
+@keyframes cloudMove {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 40%; }
+  100% { background-position: 0% 0%; }
+}
+
+/*markets*/
+.bg-markets {
+  background: linear-gradient(
+    135deg,
+    #fed7aa,
+    #fecaca
+  );
+  animation: marketPulse 4s ease-in-out infinite;
+}
+
+@keyframes marketPulse {
+  0%, 100% { opacity: 0.10; }
+  50% { opacity: 0.5; }
+}
+
+/* ===============================
+   Page-wide Effects Layer
+================================ */
+
+#page-effect {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+/* Make sure content stays above */
+.category-hero,
+.category-container,
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
+/*plan your trip*/
+.plan-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.plan-form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.plan-form select,
+.plan-form button {
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+}
+
+.itinerary {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.day-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+.itinerary-items {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.itinerary-link {
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #1e3a8a;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.itinerary-link:hover {
+  background: #c7d2fe;
+  transform: translateY(-2px);
+}
+.day-distance {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: #475569;
+  font-weight: 500;
+}
+.day-distance {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: #475569;
+}
+.route-btn {
+  display: inline-block;
+  margin-top: 0.6rem;
+  padding: 0.5rem 1rem;
+  background: #22c55e;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.route-btn:hover {
+  background: #16a34a;
+}
+
+.place-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.place-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.category-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 46px;
+  height: 46px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.place-hero img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.place-details {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.place-meta {
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+#placeMap iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  border: none;
+  margin: 1.5rem 0;
+}
+.place-card {
+  cursor: pointer;
+}
+.nearby-section {
+  margin-top: 3rem;
+}
+
+.nearby-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.nearby-card {
+  cursor: pointer;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.nearby-card:hover {
+  transform: translateY(-4px);
+}
+
+.nearby-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.nearby-card h4 {
+  font-size: 0.9rem;
+  padding: 0.6rem;
+}
+
+
+.itinerary-btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #ff6b35;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.itinerary-btn.added {
+  background: #2ecc71;
+}
+
+
+
+
+.filter-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #eee;
+  transition: 0.3s;
+}
+
+.filter-btn:hover {
+  background: #ff6b35;
+  color: white;
+}
+
+.filter-btn.active {
+  background: #ff6b35;
+  color: white;
+}

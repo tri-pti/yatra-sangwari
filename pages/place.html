@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Place | Yatra Sangwari</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="../assets/images/logo/logo.png" alt="Yatra Sangwari Logo">
+      <span>Yatra Sangwari</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../cities.html">Destinations</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="place-hero">
+  <img id="placeImage" alt="Place Image">
+</section>
+
+<main class="place-details">
+  <h1 id="placeName">Place Name</h1>
+  <p class="place-meta">
+    <span id="placeCity"></span> • <span id="placeCategory"></span>
+  </p>
+
+  <p id="placeDescription"></p>
+
+  <div id="placeMap"></div>
+  <button id="addToItineraryBtn" class="itinerary-btn">
+  ➕ Add to Itinerary
+</button>
+
+  <a id="directionLink" target="_blank" class="dir-btn">🧭 Get Directions</a>
+</main>
+<!--<section class="nearby-section">
+  <h2>Nearby Places</h2>
+  <div id="nearbyList" class="nearby-grid"></div>
+</section>-->
+
+<footer class="footer">
+  <p>© 2026 Yatra Sangwari</p>
+</footer>
+
+<script src="../assets/js/place.js"></script>
+</body>
+</html>

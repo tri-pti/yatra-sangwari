@@ -1,0 +1,101 @@
+/* ===============================
+   Layout: Navbar, Footer, Buttons
+================================ */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--secondary);
+}
+
+.logo img {
+  width: 42px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.25);
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: var(--primary);
+  color: #000;
+}
+
+/* Buttons */
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #ff8787;
+  transform: translateY(-3px);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 3rem;
+}
+
+.footer p {
+  font-size: 0.9rem;
+}
+
+/* ===============================
+   Button Micro-interactions
+================================ */
+
+.btn-primary,
+.card-btn,
+.map-btn {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary:active,
+.card-btn:active,
+.map-btn:active {
+  transform: scale(0.96);
+}
+
